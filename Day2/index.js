@@ -1,16 +1,23 @@
 
-let arr = [10, 5, 15]
+let arr = [10, 5, 15,50,24,56,78]
 let n = arr.length
 console.time()
 
 // 1.Find the Maximum of Three Numbers
-// let largest = arr[0]
-// for (let i = 0; i < n; i++) {
-//     if (arr[i] > largest) {
-//         largest = arr[i]
-//     }
-// }
-// console.log(largest)
+let largest = arr[0]
+let small = arr[0]
+for (let i = 0; i < n; i++) {
+    if (arr[i] > largest) {
+        largest = arr[i]
+    }
+     if (arr[i] < small) {
+        small = arr[i]
+    }
+    
+}
+console.log(largest)
+console.log(small)
+
 
 
 // 2.Check if a Number is Positive, Negative, or Zero
